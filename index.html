@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Social Media Dashboard</title>
+
+  <link rel="stylesheet" href="./styles.css" />
+  <script defer src="script.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Social Media Dashboard</h1>
+    <strong class="total">Total Followers: 23,004</strong>
+    <hr />
+    <div class="themes-box">
+      <strong class="mode">Dark Mode</strong>
+      <button class="switch">
+        <div class="dot"></div>
+      </button>
+    </div>
+  </header>
+  <main>
+    <div id="facebook" class="social-box">
+      <img class="icon" src="./images/icon-facebook.svg" alt="Facebook icon" />
+      <small class="account">@nathanf</small>
+      <strong class="followers-number">1987</strong>
+      <small class="follower-txt">followers</small>
+      <div class="change">
+        <img class="arrow" src="./images/icon-up.svg" alt="up arrow" />
+        <strong class="new-followers">12</strong>
+        <strong class="today">Today</strong>
+      </div>
+    </div>
+    <div id="twitter" class="social-box">
+      <img class="icon" src="./images/icon-twitter.svg" alt="Twitter icon" />
+      <small class="account">@nathanf</small>
+      <strong class="followers-number">1044</strong>
+      <small class="follower-txt">followers</small>
+      <div class="change">
+        <img class="arrow" src="./images/icon-up.svg" alt="up arrow" />
+        <strong class="new-followers">99</strong>
+        <strong class="today">Today</strong>
+      </div>
+    </div>
+    <div id="instagram" class="social-box">
+      <img class="icon" src="./images/icon-instagram.svg" alt="Instagram icon" />
+      <small class="account">@realnathanf</small>
+      <strong class="followers-number">11k</strong>
+      <small class="follower-txt">followers</small>
+      <div class="change">
+        <img class="arrow" src="./images/icon-up.svg" alt="up arrow" />
+        <strong class="new-followers">1099</strong>
+        <strong class="today">Today</strong>
+      </div>
+    </div>
+    <div id="youtube" class="social-box">
+      <img class="icon" src="./images/icon-youtube.svg" alt="YouTube icon" />
+      <small class="account">Nathan F.</small>
+      <strong class="followers-number">8239</strong>
+      <small class="follower-txt">Subscribers</small>
+      <div class="change">
+        <img class="arrow" src="./images/icon-down.svg" alt="up arrow" />
+        <strong class="new-followers">144</strong>
+        <strong class="today">Today</strong>
+      </div>
+    </div>
+  </main>
+  <strong class="sec-title">Overview - Today</strong>
+  <section class="overview">
+    <div id="fb-views" class="index">
+      <strong class="describe">Page views</strong>
+      <img class="icon" src="./images/icon-facebook.svg" alt="Facebook icon" />
+      <strong class="today-num">87</strong>
+      <div class="today-change">
+        <img class="arrow" src="./images/icon-up.svg" alt="up arrow" />
+        <strong class="num-change">3%</strong>
+      </div>
+    </div>
+    <div id="fb-likes" class="index">
+      <strong class="describe">Likes</strong>
+      <img class="icon" src="./images/icon-facebook.svg" alt="Facebook icon" />
+      <strong class="today-num">52</strong>
+      <div class="today-change">
+        <img class="arrow" src="./images/icon-down.svg" alt="down arrow" />
+        <strong class="num-change">2%</strong>
+      </div>
+    </div>
+    <div id="insta-likes" class="index">
+      <strong class="describe">Likes</strong>
+      <img class="icon" src="./images/icon-instagram.svg" alt="Instagram icon" />
+      <strong class="today-num">5462</strong>
+      <div class="today-change">
+        <img class="arrow" src="./images/icon-up.svg" alt="up arrow" />
+        <strong class="num-change">2257%</strong>
+      </div>
+    </div>
+    <div id="insta-views" class="index">
+      <strong class="describe">Profile views</strong>
+      <img class="icon" src="./images/icon-instagram.svg" alt="Instagram icon" />
+      <strong class="today-num">52k</strong>
+      <div class="today-change">
+        <img class="arrow" src="./images/icon-up.svg" alt="up arrow" />
+        <strong class="num-change">1375%</strong>
+      </div>
+    </div>
+    <div id="twtr-tweets" class="index">
+      <strong class="describe">Retweets</strong>
+      <img class="icon" src="./images/icon-twitter.svg" alt="Twitter icon" />
+      <strong class="today-num">117</strong>
+      <div class="today-change">
+        <img class="arrow" src="./images/icon-up.svg" alt="up arrow" />
+        <strong class="num-change">303%</strong>
+      </div>
+    </div>
+    <div id="twtr-likes" class="index">
+      <strong class="describe">Likes</strong>
+      <img class="icon" src="./images/icon-twitter.svg" alt="Twitter icon" />
+      <strong class="today-num">507</strong>
+      <div class="today-change">
+        <img class="arrow" src="./images/icon-up.svg" alt="up arrow" />
+        <strong class="num-change">553%</strong>
+      </div>
+    </div>
+    <div id="yt-likes" class="index">
+      <strong class="describe">Likes</strong>
+      <img class="icon" src="./images/icon-youtube.svg" alt="YouTube icon" />
+      <strong class="today-num">107</strong>
+      <div class="today-change">
+        <img class="arrow" src="./images/icon-down.svg" alt="down arrow" />
+        <strong class="num-change">19%</strong>
+      </div>
+    </div>
+    <div id="yt-views" class="index">
+      <strong class="describe">Total views</strong>
+      <img class="icon" src="./images/icon-youtube.svg" alt="YouTube icon" />
+      <strong class="today-num">1407</strong>
+      <div class="today-change">
+        <img class="arrow" src="./images/icon-down.svg" alt="down arrow" />
+        <strong class="num-change">12%</strong>
+      </div>
+    </div>
+  </section>
+</body>
+</html>
