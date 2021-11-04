@@ -7,10 +7,6 @@
     transition: 0.5s ease;
 }
 
-body {
-    width: 100vw;
-}
-
 
 /* Header Styles */
 header {
@@ -203,6 +199,24 @@ main {
     main {
         display: flex;
         justify-content: space-around;
+    }
+
+    header {
+        display: grid;
+        grid-template-areas: 
+            "title themes"
+            "total themes";
+        align-items: center;
+    }
+
+    hr {
+        display: none;
+    }
+
+    .themes-box {
+        grid-area: themes;
+        justify-content: flex-end;
+        gap: 1em;
     }
 
     .social-box {
